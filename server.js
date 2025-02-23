@@ -14,9 +14,15 @@ app.use(bodyParser.json());
 
 app.use('/api', api);
 
-app.listen(port, function(){
-    console.log("Marvellous Innfosystems : Server running on localhost:" + port);
+// app.listen(port, function(){
+//     console.log("Marvellous Innfosystems : Server running on localhost:" + port);
+// });
+
+const PORT = process.env.PORT || 3000;  // Use Render’s assigned port
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
+
 
 
 /////////////////////////////////////////
