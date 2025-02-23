@@ -150,26 +150,4 @@ router.post('/postData', async (req, res) => {
   ///
 
 
-
-
-//////*my edit///// connecting 
-
-// async function addUser() {
-//   try {
-//       const newUser = new User({
-          
-//           email: "johndoe@example.com",
-//           password: "hashedpassword123" // Make sure to hash passwords in real apps
-//       });
-
-//       const savedUser = await newUser.save();
-//       console.log("User saved:", savedUser);
-//   } catch (error) {
-//       console.error("Error saving user:", error);
-//   }
-// }
-
-// // Call the function
-// addUser();
-
 module.exports = router;
